@@ -1,0 +1,15 @@
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\bin\Debug\net6.0\TennosBussines.exe
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\bin\Debug\net6.0\TennosBussines.deps.json
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\bin\Debug\net6.0\TennosBussines.runtimeconfig.json
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\bin\Debug\net6.0\TennosBussines.dll
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\bin\Debug\net6.0\TennosBussines.pdb
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.csproj.AssemblyReference.cache
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.AssemblyInfoInputs.cache
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.AssemblyInfo.cs
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.csproj.CoreCompileInputs.cache
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.dll
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\refint\TennosBussines.dll
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.pdb
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\TennosBussines.genruntimeconfig.cache
+C:\Users\JeremyEB\Documents\Programacion\C#\.NetCore\TennosBussines\TennosBussines\obj\Debug\net6.0\ref\TennosBussines.dll

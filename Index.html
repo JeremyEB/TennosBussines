@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Palindromo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <img src="Tennos-logo-w.png" width="100px">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                  <span class="fs-4">Ejercicio 1 y 2 Javascript</span>
+                </a>
+              </header>
+        </div>
+        <br>
+        <div class="container-titulo">
+            <h1>Comprobacion de palabras Polindromas</h1>
+            <label>Introducir Palabra</label>
+            <input type="text" class="form-control" id="palabra">
+            <br>
+            <button type="button" class="btn btn-primary" onclick="palindromos()">Comprobar</button>
+        </div>
+        <br>
+        <div class="container-titulo2">
+            <h1>Introducir numero de billete</h1>
+            <label>Billete</label>
+            <input type="text" class="form-control" id="numero-ticket">
+            <br>
+            <button type="button" class="btn btn-primary" onclick="ComprobarTicket()">Comprobar</button>
+        </div>
+    </div>
+</body>
+<script>
+    /*Creando la funcion del primer ejercicio*/
+    function palindromos(){
+        /*Aqui estamos recogiendo la palabra que se introduzca en el input "palabra"*/
+        const palabra = document.getElementById("palabra").value;
+        /*Aqui estamos convirtiendo la palabra introducida en el input a LowerCase o sea, estamos haciendo que la palabra se minuscula en todo su sentido*/
+        var palabra2 = palabra.toLowerCase()
+        /*Aqui creamos una variables string vacia*/
+        var palabra2Invertida = "";
+        /*Aqui viene la logica que trata que mediante el bucle for recorra la palabra introduca de forma al reves
+        entonces de esa manera contraria es como se almacenara en el string vacio 'palabra2Invertida'
+        */
+        for (var i = palabra.length - 1; i >= 0; i --){
+            palabra2Invertida += palabra2[i];
+        }
+        /*Creamos una condicion que comprueba si son iguales*/
+        if( palabra2 === palabra2Invertida){
+            alert("Es Polindroma");
+        } else {
+            alert("No es Polindroma")
+        }
+    }
+    
+    /*Creando las funciones 
+    funcion uno recibir el valor del numero en HTML
+    */
+    function ComprobarTicket(){
+        //Obteniendo numero del ticket
+        let numero = document.getElementById("numero-ticket").value;
+        //Convirtiendo el numero text a entero
+        numero = parseInt(numero)
+        //Comprobando el resultado de la funcion TicketGanador
+        let comprobarNumero = TicketGanador(numero);
+        //Creando una condicion que responda dependiendo la respuesta
+        if(comprobarNumero === true){
+            alert("El numero es ganador");
+        }
+        else {
+            alert("El numero no es ganador");
+        }
+    }
+
+    //Creamos la funcion ticket ganador y de parametro ponemos numero(osea el numero del ticket que se registra en el input)
+    function TicketGanador(numero) {
+        //Utilizamos digitosNumeros para convertir en un array y asi tener valores (a,b,c,d,...)
+        let digitosNumero = numero.toString().split('').map(Number);
+        //Digitos numero solamente sera afortunado si el numero final es par terminado en cero
+        if (digitosNumero.length % 2 !== 0){
+            return false;
+        }
+        /*Creamos dos variables la var1 almacenara los valores dos primerso valores del string con la funcion 
+        slice y con la funcion reduce se reduciran los valores primeros valores y seran igual a la suma de los dos 
+        primeros valores mas el 0, lo mismo con la variable pero con los ultimos*/
+        let var1 = digitosNumero.slice(0, digitosNumero.length / 2).reduce((a,b) => a + b, 0);
+        let var2 = digitosNumero.slice(digitosNumero.length / 2).reduce((a,b) => a + b, 0);
+        /*Retornara la suma de las dos variables son iguales, ejemplo
+        1 + 2 = 3 mas el 0 valor valido
+        3 + 4 = 7 mas el 0 valor valido
+        1 + 2 = 4 mas el 1 valor no valido*/
+        return var1 === var2;
+    }
+
+</script>
+</html>
